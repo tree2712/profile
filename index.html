@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101010">
+    <meta name="description" content="Homepage kecil milik Tree — hal-hal yang dibuat dan disukai.">
+    <title>Tree's — little corner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <video class="page-wallpaper" id="page-wallpaper" autoplay muted loop playsinline aria-hidden="true">
+      <!-- VIDEO LATAR SELURUH WEBSITE: ganti file ini di folder media. -->
+      <source src="sua.mp4" type="video/mp4">
+    </video>
+    <div class="page-wallpaper-shade" aria-hidden="true"></div>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#top">Tree<span>.space</span></a>
+        <nav aria-label="Navigasi utama">
+          <a href="#things">things</a>
+          <a href="#video">video</a>
+          <a href="#books">books</a>
+          <a href="#links">links</a>
+        </nav>
+      </header>
+
+      <section class="profile-card" id="links" aria-label="Profil pribadi">
+        <div class="profile-banner" id="profile-banner">
+          <!-- WALLPAPER DI BELAKANG KARTU PROFIL: ganti media/profile-wallpaper.jpg. -->
+          <video class="profile-banner-video" id="profile-banner-video" autoplay muted loop playsinline aria-hidden="true" hidden>
+            <source src="cherry.mp4" type="video/mp4">
+          </video>
+          <img class="profile-banner-image" id="profile-banner-image" src="media/profile-wallpaper.jpg" alt="" hidden>
+          <div class="profile-banner-shade"></div>
+          <span class="banner-label">PROFILE WALLPAPER · 01</span>
+          <span class="banner-symbol">✳</span>
+        </div>
+        <div class="profile-body">
+          <div class="avatar-wrap">
+            <!-- FOTO PROFIL: ganti media/avatar.jpg. -->
+            <img id="profile-avatar" src="pfp2.jpeg" alt="Foto profil Tree" hidden>
+            <span class="avatar-fallback">[N]</span>
+          </div>
+          <div class="profile-identity">
+            <div class="profile-name-row"><h2>@tree</h2><span class="profile-mark">✳</span></div>
+            <p class="profile-status"><span class="status-light"></span> currently bored</p>
+          </div>
+          <p class="profile-bio">idk what to write here, i'll write something if i think of something.</p>
+          <div class="profile-platforms">
+            <a href="https://discord.com/users/27_tree" target="_blank" rel="noreferrer">◉ Discord</a>
+            <a href="https://steamcommunity.com/id/blessedtree7777/" target="_blank" rel="noreferrer">◈ Steam</a>
+            <a href="https://open.spotify.com/user/31cyc4be4eo4itqcqg6bukgucc4a?si=b2d7e57fe1c44d1d" target="_blank" rel="noreferrer">♫ Spotify</a>
+            <a href="https://www.tiktok.com/@27_tree?_r=1&_t=ZS-9AAUV3K6fSv" target="_blank" rel="noreferrer">♪ TikTok</a>
+            <a href="https://www.instagram.com/wat3r_f41l?stkn=YTV4ZXJxNDBrM3Fx" target="_blank" rel="noreferrer">◎ Instagram</a>
+          </div>
+        </div>
+      </section>
+
+      <main id="top">
+        <section class="intro">
+          <div class="status-line"><span class="status-light"></span><span>currently into <b id="current-focus">old musics</b></span><button class="focus-next" id="focus-next" type="button" aria-label="Ganti status minat">↻</button><span class="status-note">updated whenever</span></div>
+          <div class="intro-layout">
+            <div>
+              <h1>hi! i'm <span>Ru</span><span class="wave">✳</span></h1>
+              <p class="intro-copy">this is just a random homepage for me. well.. my hobby is reading comics, listening to musics, and.. idk, that's all i can think of.</p>
+              <p class="intro-copy secondary">this site is still growing just like me.. and.. us, ig?</p>
+            </div>
+            <div class="avatar-card"><span class="avatar-spark">✳</span><span class="avatar-initial">[RU]<span class="avatar-caption">...</span></div>
+          </div>
+        </section>
+
+        <section class="content-section" id="things">
+          <div class="section-title"><h2>things i like <span>✳</span></h2><span class="section-aside">A FEW CURRENT OBSESSIONS</span></div>
+          <div class="things-list">
+            <article class="thing-row"><span class="thing-icon icon-lilac">✿</span><div><h3>Playing Persona</h3><p>i'm currently playing persona 5 royal, can't wait to finish it and continue to persona 3 reload since i already bought it.</p></div><span class="thing-index">01</span></article>
+            <article class="thing-row"><span class="thing-icon icon-yellow">♫</span><div><h3>listening to musics</h3><p>i love listening to musics whatever i do. I love old musics, chill musics, and or anything that suits my taste.</p></div><span class="thing-index">02</span></article>
+            <article class="thing-row"><span class="thing-icon icon-blue">☼</span><div><h3>Drinking tea</h3><p>I'm so obsessed, i can't start my day without tea.</p></div><span class="thing-index">03</span></article>
+          </div>
+        </section>
+
+        <section class="content-section video-section" id="video">
+          <div class="section-title"><h2>recently, on camera <span>↘</span></h2><span class="section-aside">LITTLE MOMENTS, SAVED</span></div>
+          <div class="video-card">
+            <div class="video-tv">
+              <div class="tv-topline"><span>MY CHANNEL · CH 01</span><button id="tv-power" class="tv-power" type="button" aria-pressed="true">◉ POWER OFF</button></div>
+              <div class="video-screen" id="tv-screen">
+                <video id="profile-video" controls playsinline preload="metadata" poster="image.png" aria-label="Video pilihan tree">
+                  <!-- VIDEO DI DALAM TV: ganti media/my-video.mp4. -->
+                  <source src="cat.mp4" type="video/mp4">
+                  Browser kamu belum mendukung video HTML5.
+                </video>
+                <div class="tv-scanlines" aria-hidden="true"></div>
+                <div class="tv-empty"><span>NO TAPE INSERTED</span><small>Taruh video di media/my-video.mp4</small></div>
+                <div class="tv-off-message">TV OFF</div>
+              </div>
+              <div class="tv-bottomline"><span class="tv-led"></span><span>MONO / VHS / 001</span><span>VOL · ▮▮▯</span></div>
+            </div>
+            <div class="video-info"><div><span class="eyebrow">A LITTLE MEMORY</span><h3>My cat</h3><p>His name is Iput, he's so cute isn`t he, my beloved one.</p></div><span class="video-date">[JUNE · 2026]</span></div>
+          </div>
+        </section>
+
+        <section class="content-section music-section" id="music">
+          <div class="section-title"><h2>on repeat <span>♫</span></h2><span class="section-aside">MY CURRENT SOUNDTRACK</span></div>
+          <div class="music-card">
+            <div class="record-art" aria-hidden="true"><div class="record"><span class="record-label">THE<br>BEST</span></div><span class="record-spark">✳</span></div>
+            <div class="track-details"><span class="eyebrow">NOW PLAYING</span><h3>Cico Buff</h3><p>Cocteau Twins</p><div class="track-controls"><button id="play-button" type="button" aria-label="Play The Song">▶</button><div class="track-progress"><input id="track-seek" type="range" min="0" max="100" value="0" aria-label="Posisi lagu"><div class="time-row"><span id="current-time">0:00</span><span id="duration">0:00</span></div></div></div><p class="music-hint" id="music-hint">Tambahkan lagu favoritmu ke folder <code>media</code> untuk mulai memutar.</p></div>
+            <audio id="favorite-song" preload="metadata"><source src="Cocteau Twins - Cico Buff (Lyrics) - your fav song.mp3.mp3" type="audio/mpeg">Browser kamu belum mendukung audio HTML5.</audio>
+          </div>
+        </section>
+
+        <section class="content-section notes-section">
+          <div class="section-title"><h2>little notes <span>✎</span></h2><span class="section-aside">A TINY BLOG / MINI JOURNAL</span></div>
+          <div class="notes-grid"><article><span class="note-date">NOTE 001 · [....]</span><h3>....</h3><p>........</p><span class="note-arrow">↗</span></article><article><span class="note-date">NOTE 002 · [....]</span><h3>.....</h3><p>........</p><span class="note-arrow">↗</span></article></div>
+        </section>
+
+        <!--<section class="content-section books-section" id="books">
+          <div class="section-title"><h2>books i recommend <span>▤</span></h2><span class="section-aside">A FEW GOOD READS</span></div>
+          <p class="book-intro">Books i like that i wanna share it to everyone. Click the cards to see the book details.</p>
+          <div class="book-grid">
+            <a class="book-card" href="https://www.goodreads.com/" target="_blank" rel="noreferrer"><span class="book-cover cover-one"><small>READ NO. 01</small><b>[JUDUL<br>BUKU]</b><i>[NAMA PENULIS]</i></span><span class="book-reason">“[Satu alasan singkat kenapa kamu merekomendasikannya.]”</span></a>
+            <a class="book-card" href="https://www.goodreads.com/" target="_blank" rel="noreferrer"><span class="book-cover cover-two"><small>READ NO. 02</small><b>[JUDUL<br>BUKU]</b><i>[NAMA PENULIS]</i></span><span class="book-reason">“[Kutipan pendek atau kesanmu tentang buku ini.]”</span></a>
+            <a class="book-card" href="https://www.goodreads.com/" target="_blank" rel="noreferrer"><span class="book-cover cover-three"><small>READ NO. 03</small><b>[JUDUL<br>BUKU]</b><i>[NAMA PENULIS]</i></span><span class="book-reason">“[Ceritakan siapa yang mungkin suka membaca ini.]”</span></a>
+          </div>
+        </section> -->
+
+        <section class="fun-section">
+          <div class="section-title"><h2>fun stuff <span>☆</span></h2><span class="section-aside">EXTRA LITTLE CORNER</span></div>
+          <p class="fun-copy">Corner for random stuff i like. Playlist, collection, playlist again, or anything.</p>
+          <div class="fun-buttons"><a href="#music"><span>♫</span> my playlist</a><a href="#video"><span>▶</span> video diary</a><a href="#things"><span>✿</span> hobby shelf</a><a href="#books"><span>▤</span> book shelf</a><button class="surprise-button" id="surprise-button" type="button"><span>✦</span> surprise me</button></div>
+          <p class="surprise-message" id="surprise-message" aria-live="polite">There might be a tiny surprise here.</p>
+        </section>
+      </main>
+
+      <footer class="site-footer"><a class="wordmark" href="#top">Tree<span>.space</span></a><span>MADE WITH BOREDOM (27_TREE) · © 2026</span><a href="#top">back to top ↑</a></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
