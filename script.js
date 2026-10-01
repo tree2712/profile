@@ -135,14 +135,14 @@ function formatTime(seconds) {
 if (audio && playButton && seekBar) {
   playButton.addEventListener('click', async () => {
     if (audio.error) {
-      musicHint.textContent = 'Tambahkan file media/favorite-song.mp3, lalu muat ulang halaman.';
+      musicHint.textContent = '';
       return;
     }
 
     if (audio.paused) {
       try {
         await audio.play();
-        musicHint.textContent = 'Now playing — enjoy the song ♡';
+        musicHint.textContent = 'Now playing — enjoy the song ~';
       } catch {
         musicHint.textContent = 'Tambahkan lagu ke folder media agar bisa diputar.';
       }
