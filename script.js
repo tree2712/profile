@@ -144,7 +144,7 @@ if (audio && playButton && seekBar) {
         await audio.play();
         musicHint.textContent = 'Now playing — enjoy the song ~';
       } catch {
-        musicHint.textContent = 'Tambahkan lagu ke folder media agar bisa diputar.';
+        musicHint.textContent = '';
       }
     } else {
       audio.pause();
