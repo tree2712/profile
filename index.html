@@ -111,9 +111,12 @@
           </div>
         </section>
 
-        <section class="content-section notes-section">
+        <section class="content-section notes-section" id="little-notes">
           <div class="section-title"><h2>little notes <span>✎</span></h2><span class="section-aside">A TINY BLOG / MINI JOURNAL</span></div>
-          <div class="notes-grid"><article><span class="note-date">NOTE 001 · [08/11/2026]</span><h3>....</h3><p>....</p><span class="note-arrow">↗</span></article><article><span class="note-date">NOTE 002 · [....]</span><h3>.....</h3><p>........</p><span class="note-arrow">↗</span></article></div>
+          <p class="notes-status" id="notes-status" role="status" aria-live="polite">Loading little notes…</p>
+          <button class="notes-retry" id="notes-retry" type="button" hidden>Try again</button>
+          <div class="notes-grid" id="little-notes-grid" data-notes-url="https://api.168-138-184-104.sslip.io/api/public/ru/notes" hidden></div>
+          <noscript><p class="notes-status">Enable JavaScript to read my latest notes.</p></noscript>
         </section>
 
         <!--<section class="content-section books-section" id="books">
@@ -137,5 +140,6 @@
       <footer class="site-footer"><a class="wordmark" href="#top">Tree<span>.space</span></a><span>MADE WITH BOREDOM (27_TREE) · © 2026</span><a href="#top">back to top ↑</a></footer>
     </div>
     <script src="script.js"></script>
+    <script src="notes.js" defer></script>
   </body>
 </html>
