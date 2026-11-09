@@ -1,5 +1,5 @@
 (() => {
-  const grid = document.querySelector('#little-notes-grid');
+  const grid = document.querySelector('#ru-notes-grid');
   const status = document.querySelector('#notes-status');
   const retry = document.querySelector('#notes-retry');
   if (!grid || !status || !retry) return;
@@ -45,7 +45,7 @@
     const timeout = window.setTimeout(() => controller.abort(), 10000);
     retry.hidden = true;
     status.hidden = false;
-    status.textContent = 'Loading little notes…';
+    status.textContent = 'Loading ru-notes…';
     grid.hidden = true;
     // Clear old entries immediately, including any notes that were unpublished.
     grid.replaceChildren();
