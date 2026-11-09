@@ -55,7 +55,8 @@
       });
       if (!response.ok) throw new Error('Notes unavailable');
       const payload = await response.json();
-      if (!Array.isArray(payload.notes) || payload.notes.some((note) =>
+      const items = Array.isArray(payload.data) ? payload.data : payload.notes;
+      if (!Array.isArray(items) || items.some((note) =>
         !note || typeof note.id !== 'string' || typeof note.title !== 'string' ||
         typeof note.body !== 'string' || typeof note.date !== 'string' ||
         !/^\d{4}-\d{2}-\d{2}$/.test(note.date) ||
@@ -63,7 +64,7 @@
         throw new Error('Invalid notes');
       }
       if (pending !== controller) return;
-      const notes = payload.notes.slice(0, 6);
+      const notes = items.slice(0, 6);
       grid.replaceChildren(...notes.map(noteCard));
       grid.hidden = notes.length === 0;
       status.hidden = notes.length > 0;
